@@ -1,0 +1,65 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+.nav-link {
+  color: #2C1810; text-decoration: none; font-size: 11px;
+  letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.55;
+  transition: opacity 0.2s; font-weight: 400;
+}
+.nav-link:hover { opacity: 1; }
+
+.btn-rose {
+  background: #C97B8A; color: #fff; border: none;
+  padding: 13px 32px; font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; cursor: pointer; font-family: 'Jost', sans-serif;
+  font-weight: 500; transition: background 0.2s, transform 0.15s;
+}
+.btn-rose:hover { background: #B56878; transform: translateY(-1px); }
+
+.btn-outline-rose {
+  background: transparent; border: 1px solid #C97B8A; color: #C97B8A;
+  padding: 13px 32px; font-size: 11px; letter-spacing: 0.18em;
+  text-transform: uppercase; cursor: pointer; font-family: 'Jost', sans-serif;
+  transition: all 0.2s;
+}
+.btn-outline-rose:hover { background: #C97B8A; color: #fff; }
+
+.service-card {
+  background: #fff; border: 1px solid #F0E6E1;
+  padding: 36px 30px; transition: box-shadow 0.3s, transform 0.3s;
+}
+.service-card:hover {
+  box-shadow: 0 12px 40px rgba(201,123,138,0.12);
+  transform: translateY(-4px);
+}
+
+.gallery-wrap { overflow: hidden; }
+.gallery-img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.6s ease;
+}
+.gallery-wrap:hover .gallery-img { transform: scale(1.07); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.a1 { animation: fadeUp 1s ease 0.1s both; }
+.a2 { animation: fadeUp 1s ease 0.3s both; }
+.a3 { animation: fadeUp 1s ease 0.5s both; }
+
+.divider { width: 40px; height: 1px; background: #C97B8A; margin: 14px 0 24px; }
+
+@media (max-width: 768px) {
+  .about-grid  { grid-template-columns: 1fr !important; }
+  .footer-grid { grid-template-columns: 1fr !important; }
+  .services-grid { grid-template-columns: 1fr !important; }
+  .cta-inner   { flex-direction: column !important; align-items: flex-start !important; }
+  .hero-content { padding: 0 28px !important; }
+  .section     { padding: 72px 28px !important; }
+}
